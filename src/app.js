@@ -83,7 +83,7 @@ const App = () => {
   return (
     <Window
       windowIcon={winIcon}
-      windowTitle="YdQ"
+      windowTitle="YdlQt"
       minSize={minSize}
       styleSheet={styleSheet}
     >      

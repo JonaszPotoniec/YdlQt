@@ -29,6 +29,7 @@ const youtubeDlWrap = new YoutubeDlWrap("youtube-dl");
 const QueueItem = ({parameters, url, onDownloaded}) => {
   const [downloadProgress, setDownloadProgress] = useState(0);
   const [title, setTitle] = useState("fetching name...");
+  const [color, setColor] = useState("");
   
   useEffect(() => {
     console.log(parameters);
@@ -43,17 +44,19 @@ const QueueItem = ({parameters, url, onDownloaded}) => {
     .on("progress", (progress) => 
       setDownloadProgress(progress.percent))
     .on("error", (error) => {
+      setColor("red");
       console.error(error);
     })
     .on("close", () => {
+      setColor("green");
       onDownloaded();
     }); 
   }, []);
     
   return ( 
     <View style={containerStyle}>   
-      <Text style={"flex: 5; padding-right: 5px;"}>{title}</Text>
-      <Text style={"flex: 1"}>{downloadProgress+"%"}</Text>
+      <Text style={`flex: 5; padding-right: 5px; color: ${color}`}>{title}</Text>
+      <Text style={`flex: 1; color: ${color}`}>{downloadProgress+"%"}</Text>
     </View>  
   );
 }
