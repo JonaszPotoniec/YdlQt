@@ -2,7 +2,7 @@
   "name": "youtube-dl qt",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "Jonasz Potoniec",
+  "author": "Jonasz Potoniec <jonasz.potoniec@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "webpack -p",
@@ -10,6 +10,14 @@
     "start": "qode ./dist/index.js",
     "debug": "qode --inspect ./dist/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonaszPotoniec/YdlQt.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JonaszPotoniec/YdlQt/issues"
+  },
+  "homepage": "https://github.com/JonaszPotoniec/YdlQt",
   "dependencies": {
     "@nodegui/react-nodegui": "^0.9.0",
     "open": "^7.2.1",
