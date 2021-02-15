@@ -7,7 +7,7 @@
 
 ## How To Install 
 
-Download newest version from [Releases](https://github.com/JonaszPotoniec?tab=packages&repo_name=YdlQt) tab and run it.  
+Download newest version from [Releases](https://github.com/JonaszPotoniec/YdlQt/releases) tab and run it.  
 If you want to change video or audio format you will also need to install [ffmpeg](https://ffmpeg.org/download.html).
 
 On Linux you will also need [youtube-dl](http://ytdl-org.github.io/youtube-dl/download.html):
