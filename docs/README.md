@@ -1,15 +1,16 @@
 # YdlQt
 
-**A qt frontend for youtube-dl.**
+**A Qt frontend for youtube-dl.**
 
 ![App screenshot](img/ui.png)
+![Notification screenshot](img/notification.png)
 
 ## How To Install 
 
 Download newest version from [Releases](https://github.com/JonaszPotoniec?tab=packages&repo_name=YdlQt) tab and run it.  
-If you want to change video or audio format you need to install [ffmpeg](https://ffmpeg.org/download.html).
+If you want to change video or audio format you will also need to install [ffmpeg](https://ffmpeg.org/download.html).
 
-On Linux you also need [youtube-dl](http://ytdl-org.github.io/youtube-dl/download.html):
+On Linux you will also need [youtube-dl](http://ytdl-org.github.io/youtube-dl/download.html):
 ```bash
 # Ubuntu-based
 sudo apt install youtube-dl ffmpeg
